@@ -15,7 +15,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 
 int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
-	const auto pClassName = L"MainWindow";
+	const auto pClassName = "MainWindow";
 
 	//register window class
 	WNDCLASSEX wc = { 0 };
@@ -36,7 +36,7 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 	HWND hWnd = CreateWindowEx(
 		0,
 		pClassName,
-		L"MainWindow",
+		"MainWindow",
 		WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU,
 		0, 0,
 		1366, 720,
